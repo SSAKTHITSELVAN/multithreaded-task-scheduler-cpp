@@ -120,7 +120,7 @@ void worker(int id)
 int main(){
     cout<<"\nstarted\n";
     Task* t1 = new Download(1, "downloading song - 1", 5);
-    Task* t2 = new Email(2, "emailing song", 15);
+    Task* t2 = new Email(2, "emailing song - 1", 15);
     Task* t3 = new Download(1, "downloading song - 2", 12);
 
     taskQueue.push(t1);
@@ -132,6 +132,7 @@ int main(){
     w1.join();
     w2.join();
     w3.join();
+
 
     return 0;
 }
